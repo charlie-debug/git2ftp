@@ -36,12 +36,19 @@ Open up the post-update script and change the paths to suit your local path, see
 Open up the deploy.py script and configure the following:
 
 exclude_dirs - This is a python array of directories not to be transferred to your remote server via FTP
+
 exclude_files - This is a python array of files not to be transferred to your remote server via FTP
+
 ftp_host
+
 ftp_username
+
 ftp_password
+
 dest_dir - The FTP destination directory, that is the directory FTP will initially upload to
+
 backup_dir - The archive directory. Your existing production directory will be backed up to an archive directory
+
 production_dir - the live production directory which hosts your production website
 
 
