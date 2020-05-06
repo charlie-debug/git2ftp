@@ -25,5 +25,5 @@ cd $workrepo
 git init
 git remote add origin $barerepo
 ```
-
+Copy the deploy.py script into the hooks directory within the $barepo repository.
 
