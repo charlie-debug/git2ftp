@@ -9,8 +9,8 @@ The basic principle of this project is that you have a remote repository on your
 
 In the original script by [Kristijan Burnik](https://invision-web.net/web/deploying-to-production-via-ftp-with-git-hooks/), it wasn't possible to exclude directories or files from the FTP upload, this functionality was added.
 
-#Usage
-###The remote (local) repository
+# Usage
+### The remote (local) repository
 Set up a bare git repository to which you will push commits:
 
 ```
