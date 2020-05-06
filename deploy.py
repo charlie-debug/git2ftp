@@ -60,6 +60,8 @@ production_dir = "/production/www"
 
 
 if __name__ == '__main__':  
+
+  os.chdir(os.path.dirname(__file__))
   
   print "Connecting to FTP host " + ftp_host
   ftp = FTP_TLS( ftp_host , ftp_username , ftp_password )
