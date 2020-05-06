@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+
+function deploy {	
+  cd ~/documents/test/bare-repo/hooks
+  echo "Deploying local GIT work repo"
+  ~/documents/test/bare-repo/hooks/deploy.py
+}
+
+deploy
