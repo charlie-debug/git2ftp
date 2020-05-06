@@ -64,4 +64,9 @@ Initially configure your production_dir and backup_dir to a test location on you
 
 Drop a test text file in your **$workrepo** directory and execute deploy.py in a terminal window to ensure all files are copied to your server as expected.
 
+Finally make changes in your working repository, commit changes and push to your remote. Upon the remote updating, the post-update hook will execute and in turn execute the deploy.py script which will upload your files to your FTP server.
 
+### Future Work
+In no particular order:
+- [ ] Only upload changed/modified files to the FTP server not the full content of working repo
+- [ ] Add missing directory checks and optionally create if not on server
