@@ -1,6 +1,8 @@
 # git2ftp
 A python script to publish to a webserver using git via FTP
 
+## THIS IS AN ALPHA SCRIPT AND SHOULD NOT BE USED IN PRODUCTION ENVIRONMENTS ##
+
 This work was based on an original script by [Kristijan Burnik](https://invision-web.net/web/deploying-to-production-via-ftp-with-git-hooks/).
 
 This script was developed to overcome a recent problem I had with being unable to have SSH access to a web host on a shared server and therefore not being able to use git to update the production server.
@@ -56,4 +58,10 @@ You may also need to make your deploy.py script executable:
 ```
 chmod +x deploy.py
 ```
+### Testing
+**WARNING - It is advisable not to test this set up on a live production server until you are satisfied you know how it works and you have configured it correctly. 
+Initially configure your production_dir and backup_dir to a test location on your hosting server. You have been warned**
+
+Drop a test text file in your **$workrepo** directory and execute deploy.py in a terminal window to ensure all files are copied to your server as expected.
+
 
